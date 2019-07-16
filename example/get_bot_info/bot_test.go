@@ -38,8 +38,8 @@ func startServer() {
 
 func TestGetBotInfo(t *testing.T) {
 	http.HandleFunc("/bots.info", getBotInfo)
-	botToken := "xoxb-689344750534-694391105429-Um9qmK7dDUhYJjHvjd8PxnOO"
-	once.Do(startServer)
+	botToken := "xoxb-689344750534-694391105429-u6QPDq05NWNyJj5uCIWkT0vp"
+	//once.Do(startServer)
 
 	api := slack.New(botToken, slack.OptionDebug(true))
 
